@@ -1,68 +1,121 @@
-# App Starter Project with Webpack
+# Story Share App
 
-Proyek ini adalah tugas akhir dari kelas belajar pemrograman web intermediate, didalamnya pengguna dapat menambah, melihat daftar cerita dari orang lain, melihat cerita yang tersimpan serta menghapus cerita.
+A Progressive Web App (PWA) berbasis Single Page Application (SPA) yang dibuat sebagai submission proyek akhir kelas Belajar Pengembangan Web Intermediate Dicoding.
 
-## Table of Contents
+Aplikasi ini merupakan lanjutan dari aplikasi sebelumnya yang memungkinkan pengguna untuk membagikan cerita, melihat story pengguna lain pada peta interaktif, menyimpan story favorit menggunakan IndexedDB, serta mendukung fitur Push Notification dan akses offline menggunakan teknologi PWA.
 
-- [Getting Started](#getting-started)
-- [Scripts](#scripts)
-- [Project Structure](#project-structure)
+## Features
 
-## Getting Started
+* Single Page Application (SPA)
+* Menampilkan daftar story dari API
+* Menambahkan story baru
+* Menampilkan marker lokasi pada peta
+* Push Notification
+* Progressive Web App (PWA)
+* Installable Web App
+* Offline Support
+* Menyimpan story favorit menggunakan IndexedDB
+* Responsive UI
+* Accessibility support
+* Favorite Story Management
 
-### Prerequisites
+## Technologies Used
 
-- [Node.js](https://nodejs.org/) (disarankan versi 12 atau lebih tinggi)
-- [npm](https://www.npmjs.com/) (Node package manager)
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* Webpack
+* IndexedDB
+* Service Worker
+* Web Push Notification
+* Web App Manifest
+* REST API
+* Leaflet.js
 
-### Installation
+## Main Features
 
-1. Download starter project [di sini](https://github.com/SyafrizalWdMahendra/story-app.git).
-2. Lakukan unzip file.
-3. Pasang seluruh dependencies dengan perintah berikut.
-   ```shell
-   npm install
-   ```
+### Story Feed
 
-## Scripts
+Pengguna dapat melihat daftar story dari API lengkap dengan gambar, deskripsi, tanggal upload, dan lokasi.
 
-- Build for Production:
-  ```shell
-  npm run build
-  ```
-  Script ini menjalankan webpack dalam mode production menggunakan konfigurasi `webpack.prod.js` dan menghasilkan sejumlah file build ke direktori `dist`.
+### Add Story
 
-- Start Development Server:
-  ```shell
-  npm run start-dev
-  ```
-  Script ini menjalankan server pengembangan webpack dengan fitur live reload dan mode development sesuai konfigurasi di`webpack.dev.js`.
+Pengguna dapat menambahkan story baru beserta gambar dan lokasi.
 
-- Serve:
-  ```shell
-  npm run serve
-  ```
-  Script ini menggunakan [`http-server`](https://www.npmjs.com/package/http-server) untuk menyajikan konten dari direktori `dist`.
+### Push Notification
 
-## Project Structure
+Aplikasi mendukung push notification yang dapat diaktifkan maupun dinonaktifkan oleh pengguna.
 
-Proyek starter ini dirancang agar kode tetap modular dan terorganisir.
+### Favorite Story
 
-```text
-starter-project/
-├── dist/                   # Compiled files for production
-├── src/                    # Source project files
-│   ├── public/             # Public files
-│   ├── scripts/            # Source JavaScript files
-│   │   └── index.js        # Main JavaScript entry file
-│   ├── styles/             # Source CSS files
-│   │   └── styles.css      # Main CSS file
-│   └── index.html/         # Main HTML file
-├── package.json            # Project metadata and dependencies
-├── package-lock.json       # Project metadata and dependencies
-├── README.md               # Project documentation
-├── STUDENT.txt             # Student information
-├── webpack.common.js       # Webpack common configuration
-├── webpack.dev.js          # Webpack development configuration
-└── webpack.prod.js         # Webpack production configuration
+Story favorit dapat disimpan secara lokal menggunakan IndexedDB dan tetap dapat diakses meskipun offline.
+
+### Offline Mode
+
+Aplikasi tetap dapat diakses saat offline menggunakan cache dari service worker.
+
+## Progressive Web App (PWA)
+
+Project ini telah menerapkan konsep Progressive Web App dengan fitur:
+
+* Installable App
+* Offline Access
+* Service Worker
+* Web App Manifest
+* Push Notification
+* Dynamic Caching
+
+## IndexedDB Implementation
+
+IndexedDB digunakan untuk:
+
+* Menyimpan story favorit
+* Menampilkan data favorit
+* Menghapus data favorit
+
+## How to Run the Project
+
+### Menjalankan Secara Lokal
+
+1. Clone repository
+
+```bash id="u7l5s4"
+git clone <repository-url>
 ```
+
+2. Masuk ke folder project
+
+```bash id="p5y63v"
+cd Dicoding-Projeckt-Akhir-Intermediate-
+```
+
+3. Install dependencies
+
+```bash id="b25u2o"
+npm install
+```
+
+4. Jalankan development server
+
+```bash id="k9d7lf"
+npm run start-dev
+```
+
+## Learning Outcome
+
+Melalui project ini, saya mempelajari:
+
+* Pengembangan Progressive Web App (PWA)
+* Implementasi Service Worker
+* Push Notification API
+* Penggunaan IndexedDB
+* Offline caching strategy
+* Single Page Application (SPA)
+* Integrasi REST API
+* Pengelolaan asynchronous JavaScript
+* Web accessibility
+* Deployment aplikasi web modern
+
+## Author
+
+Created by Rurin Haliza during Dicoding Front-End Back-End Web Development.
